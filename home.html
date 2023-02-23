@@ -1,0 +1,63 @@
+{% extends "boilerplate.html" %}
+{% block content %}
+<style>
+    #model {
+        width: 300px;
+    }
+
+    #formm {
+        justify-content: center;
+        align-self: center;
+        display: flex;
+        margin-top: 150px;
+
+
+    }
+
+    .label {
+        color: white;
+    }
+</style>
+<!-- d-flex flex-column -->
+
+<div id="formm">
+
+    <form action=# method="post" class="needs-validation" novalidate>
+        <br>
+        <div>
+            <label for="model" id="label" style="color: white;">Choose the model:</label>
+
+            <select name="model" class="selectDropdown" id="model">
+                <option value="Impeller">Impeller</option>
+                <option value="Pump casing">Pump casing</option>
+
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="model" id="label" style="color: white;">Choose the scale:</label>
+
+            <select name="scale" id="model">
+                <option value="-1">-1</option>
+                <option value="1">1</option>
+
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="model" id="label" style="color: white;">Choose the file:</label>
+
+            <select name="file" id="model">
+                <option value="stl">stl</option>
+                <option value="gcode">gcode</option>
+
+            </select>
+        </div>
+</div>
+<br>
+<button class="btn btn-primary"
+    style="margin:auto; text-align: center;justify-content: center;width: 150px;align-self: center;display: flex;">submit</button>
+</form>
+</div>
+
+{% endblock %}
